@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Python3集合</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title">python基础</li><li class="chapter-item expanded "><a href="../python基础_1_python基础/index.html"><strong aria-hidden="true">1.</strong> python基础</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python基础_1_python基础/1.python3基础语法.html"><strong aria-hidden="true">1.1.</strong> python3基础语法</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/2.基本数据类型.html"><strong aria-hidden="true">1.2.</strong> 基本数据类型</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/3.Python3数据类型转换.html"><strong aria-hidden="true">1.3.</strong> Python3数据类型转换</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/4.Python推导式.html"><strong aria-hidden="true">1.4.</strong> Python推导式</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/5.Python3运算符.html"><strong aria-hidden="true">1.5.</strong> Python3运算符</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/6.Python3字符串.html"><strong aria-hidden="true">1.6.</strong> Python3字符串</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/7.python3列表.html"><strong aria-hidden="true">1.7.</strong> python3列表</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/8.元祖.html"><strong aria-hidden="true">1.8.</strong> 元祖</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/9.Python3字典.html"><strong aria-hidden="true">1.9.</strong> Python3字典</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/10.Python3集合.html" class="active"><strong aria-hidden="true">1.10.</strong> Python3集合</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/11.Number类型.html"><strong aria-hidden="true">1.11.</strong> Number类型</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/12.python3流程控制.html"><strong aria-hidden="true">1.12.</strong> python3流程控制</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/13.Python3迭代器与生成器.html"><strong aria-hidden="true">1.13.</strong> Python3迭代器与生成器</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/14.函数.html"><strong aria-hidden="true">1.14.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/15.Python3JSON数据解析.html"><strong aria-hidden="true">1.15.</strong> Python3JSON数据解析</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/16.Python3面向对象.html"><strong aria-hidden="true">1.16.</strong> Python3面向对象</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/17.模块与包.html"><strong aria-hidden="true">1.17.</strong> 模块与包</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/With关键字.html"><strong aria-hidden="true">1.18.</strong> With关键字</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/杂项.html"><strong aria-hidden="true">1.19.</strong> 杂项</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">python三方库</li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> fabric</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python三方库_2_fabric/fabric/index.html"><strong aria-hidden="true">2.1.</strong> fabric</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python三方库_2_fabric/fabric/Configuration.html"><strong aria-hidden="true">2.1.1.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/fabric/README_1.x.html"><strong aria-hidden="true">2.1.2.</strong> README_1.x</a></li></ol></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/index.html"><strong aria-hidden="true">2.2.</strong> invoke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/1.DefiningAndRunningTask.html"><strong aria-hidden="true">2.2.1.</strong> DefiningAndRunningTask</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/2.InvokeCoreUsage.html"><strong aria-hidden="true">2.2.2.</strong> InvokeCoreUsage</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/3.Configuration.html"><strong aria-hidden="true">2.2.3.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/4.loadingCollections.html"><strong aria-hidden="true">2.2.4.</strong> loadingCollections</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/5.UsingInvokeAslibrary.html"><strong aria-hidden="true">2.2.5.</strong> UsingInvokeAslibrary</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="python3-集合"><a class="header" href="#python3-集合">Python3 集合</a></h1>
+<p>集合（set）是一个无序的不重复元素序列。</p>
+<p>可以使用大括号 <strong>{ }</strong> 或者 <strong>set()</strong> 函数创建集合，注意：创建一个空集合必须用 <strong>set()</strong> 而不是 <strong>{ }</strong>，因为 <strong>{ }</strong> 是用来创建一个空字典。</p>
+<pre><code class="language-python">parame = {value01,value02,...}
+或者
+set(value)
+</code></pre>
+<h2 id="集合的基本操作"><a class="header" href="#集合的基本操作">集合的基本操作</a></h2>
+<h3 id="1添加元素"><a class="header" href="#1添加元素">1、添加元素</a></h3>
+<pre><code class="language-python">s.add( x )
+
+</code></pre>
+<p>将元素 x 添加到集合 s 中，如果元素已存在，则不进行任何操作。</p>
+<pre><code class="language-python">&gt;&gt;&gt; thisset = set((&quot;Google&quot;, &quot;Runoob&quot;, &quot;Taobao&quot;))
+&gt;&gt;&gt; thisset.add(&quot;Facebook&quot;)
+&gt;&gt;&gt; print(thisset)
+{'Taobao', 'Facebook', 'Google', 'Runoob'}
+</code></pre>
+<p>还有一个方法，也可以添加元素，且参数可以是列表，元组，字典等，语法格式如下：</p>
+<pre><code>s.update( x )
+</code></pre>
+<p>x 可以有多个，用逗号分开。</p>
+<pre><code class="language-python">&gt;&gt;&gt; thisset = set((&quot;Google&quot;, &quot;Runoob&quot;, &quot;Taobao&quot;))
+&gt;&gt;&gt; thisset.update({1,3})
+&gt;&gt;&gt; print(thisset)
+{1, 3, 'Google', 'Taobao', 'Runoob'}
+&gt;&gt;&gt; thisset.update([1,4],[5,6])  
+&gt;&gt;&gt; print(thisset)
+{1, 3, 4, 5, 6, 'Google', 'Taobao', 'Runoob'}
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="2移除元素"><a class="header" href="#2移除元素">2、移除元素</a></h3>
+<pre><code>s.remove( x )
+</code></pre>
+<p>将元素 x 从集合 s 中移除，如果元素不存在，则会发生错误。</p>
+<p>此外还有一个方法也是移除集合中的元素，且如果元素不存在，不会发生错误。格式如下所示：</p>
+<pre><code>s.discard( x )
+</code></pre>
+<p>我们也可以设置随机删除集合中的一个元素，语法格式如下：</p>
+<pre><code>s.pop() 
+</code></pre>
+<p>set 集合的 pop 方法会对集合进行无序的排列，然后将这个无序排列集合的左面第一个元素进行删除。</p>
+<h3 id="3计算集合元素个数"><a class="header" href="#3计算集合元素个数">3、计算集合元素个数</a></h3>
+<pre><code>len(s)	
+</code></pre>
+<h3 id="4清空集合"><a class="header" href="#4清空集合">4、清空集合</a></h3>
+<pre><code>s.clear()
+
+</code></pre>
+<pre><code class="language-python">&gt;&gt;&gt; thisset = set((&quot;Google&quot;, &quot;Runoob&quot;, &quot;Taobao&quot;))
+&gt;&gt;&gt; thisset.clear()
+&gt;&gt;&gt; print(thisset)
+set()
+</code></pre>
+<h3 id="5判断元素是否在集合中存在"><a class="header" href="#5判断元素是否在集合中存在">5、判断元素是否在集合中存在</a></h3>
+<pre><code>x in s
+
+</code></pre>
+<h3 id="集合内置方法完整列表"><a class="header" href="#集合内置方法完整列表">集合内置方法完整列表</a></h3>
+<table><thead><tr><th style="text-align: left">方法</th><th style="text-align: left">描述</th></tr></thead><tbody>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-add.html">add()</a></td><td style="text-align: left">为集合添加元素</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-clear.html">clear()</a></td><td style="text-align: left">移除集合中的所有元素</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-copy.html">copy()</a></td><td style="text-align: left">拷贝一个集合</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-difference.html">difference()</a></td><td style="text-align: left">返回多个集合的差集</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-difference_update.html">difference_update()</a></td><td style="text-align: left">移除集合中的元素，该元素在指定的集合也存在。</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-discard.html">discard()</a></td><td style="text-align: left">删除集合中指定的元素</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-intersection.html">intersection()</a></td><td style="text-align: left">返回集合的交集</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-intersection_update.html">intersection_update()</a></td><td style="text-align: left">返回集合的交集。</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-isdisjoint.html">isdisjoint()</a></td><td style="text-align: left">判断两个集合是否包含相同的元素，如果没有返回 True，否则返回 False。</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-issubset.html">issubset()</a></td><td style="text-align: left">判断指定集合是否为该方法参数集合的子集。</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-issuperset.html">issuperset()</a></td><td style="text-align: left">判断该方法的参数集合是否为指定集合的子集</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-pop.html">pop()</a></td><td style="text-align: left">随机移除元素</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-remove.html">remove()</a></td><td style="text-align: left">移除指定元素</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-symmetric_difference.html">symmetric_difference()</a></td><td style="text-align: left">返回两个集合中不重复的元素集合。</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-symmetric_difference_update.html">symmetric_difference_update()</a></td><td style="text-align: left">移除当前集合中在另外一个指定集合相同的元素，并将另外一个指定集合中不同的元素插入到当前集合中。</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-union.html">union()</a></td><td style="text-align: left">返回两个集合的并集</td></tr>
+<tr><td style="text-align: left"><a href="https://www.runoob.com/python3/ref-set-update.html">update()</a></td><td style="text-align: left">给集合添加元素</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../python基础_1_python基础/9.Python3字典.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../python基础_1_python基础/11.Number类型.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../python基础_1_python基础/9.Python3字典.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../python基础_1_python基础/11.Number类型.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

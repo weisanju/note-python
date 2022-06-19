@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Python3运算符</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title">python基础</li><li class="chapter-item expanded "><a href="../python基础_1_python基础/index.html"><strong aria-hidden="true">1.</strong> python基础</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python基础_1_python基础/1.python3基础语法.html"><strong aria-hidden="true">1.1.</strong> python3基础语法</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/2.基本数据类型.html"><strong aria-hidden="true">1.2.</strong> 基本数据类型</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/3.Python3数据类型转换.html"><strong aria-hidden="true">1.3.</strong> Python3数据类型转换</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/4.Python推导式.html"><strong aria-hidden="true">1.4.</strong> Python推导式</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/5.Python3运算符.html" class="active"><strong aria-hidden="true">1.5.</strong> Python3运算符</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/6.Python3字符串.html"><strong aria-hidden="true">1.6.</strong> Python3字符串</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/7.python3列表.html"><strong aria-hidden="true">1.7.</strong> python3列表</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/8.元祖.html"><strong aria-hidden="true">1.8.</strong> 元祖</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/9.Python3字典.html"><strong aria-hidden="true">1.9.</strong> Python3字典</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/10.Python3集合.html"><strong aria-hidden="true">1.10.</strong> Python3集合</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/11.Number类型.html"><strong aria-hidden="true">1.11.</strong> Number类型</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/12.python3流程控制.html"><strong aria-hidden="true">1.12.</strong> python3流程控制</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/13.Python3迭代器与生成器.html"><strong aria-hidden="true">1.13.</strong> Python3迭代器与生成器</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/14.函数.html"><strong aria-hidden="true">1.14.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/15.Python3JSON数据解析.html"><strong aria-hidden="true">1.15.</strong> Python3JSON数据解析</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/16.Python3面向对象.html"><strong aria-hidden="true">1.16.</strong> Python3面向对象</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/17.模块与包.html"><strong aria-hidden="true">1.17.</strong> 模块与包</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/With关键字.html"><strong aria-hidden="true">1.18.</strong> With关键字</a></li><li class="chapter-item expanded "><a href="../python基础_1_python基础/杂项.html"><strong aria-hidden="true">1.19.</strong> 杂项</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">python三方库</li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> fabric</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python三方库_2_fabric/fabric/index.html"><strong aria-hidden="true">2.1.</strong> fabric</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python三方库_2_fabric/fabric/Configuration.html"><strong aria-hidden="true">2.1.1.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/fabric/README_1.x.html"><strong aria-hidden="true">2.1.2.</strong> README_1.x</a></li></ol></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/index.html"><strong aria-hidden="true">2.2.</strong> invoke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/1.DefiningAndRunningTask.html"><strong aria-hidden="true">2.2.1.</strong> DefiningAndRunningTask</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/2.InvokeCoreUsage.html"><strong aria-hidden="true">2.2.2.</strong> InvokeCoreUsage</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/3.Configuration.html"><strong aria-hidden="true">2.2.3.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/4.loadingCollections.html"><strong aria-hidden="true">2.2.4.</strong> loadingCollections</a></li><li class="chapter-item expanded "><a href="../python三方库_2_fabric/invoke/5.UsingInvokeAslibrary.html"><strong aria-hidden="true">2.2.5.</strong> UsingInvokeAslibrary</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="python3-运算符"><a class="header" href="#python3-运算符">Python3 运算符</a></h1>
+<p>Python 语言支持以下类型的运算符:</p>
+<ul>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf1">算术运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf2">比较（关系）运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf3">赋值运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf4">逻辑运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf5">位运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf6">成员运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf7">身份运算符</a></li>
+<li><a href="https://www.runoob.com/python3/python3-basic-operators.html#ysf8">运算符优先级</a></li>
+</ul>
+<h2 id="python算术运算符"><a class="header" href="#python算术运算符">Python算术运算符</a></h2>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">+</td><td style="text-align: left">加 - 两个对象相加</td><td style="text-align: left">a + b 输出结果 31</td></tr>
+<tr><td style="text-align: left">-</td><td style="text-align: left">减 - 得到负数或是一个数减去另一个数</td><td style="text-align: left">a - b 输出结果 -11</td></tr>
+<tr><td style="text-align: left">*</td><td style="text-align: left">乘 - 两个数相乘或是返回一个被重复若干次的字符串</td><td style="text-align: left">a * b 输出结果 210</td></tr>
+<tr><td style="text-align: left">/</td><td style="text-align: left">除 - x 除以 y</td><td style="text-align: left">b / a 输出结果 2.1</td></tr>
+<tr><td style="text-align: left">%</td><td style="text-align: left">取模 - 返回除法的余数</td><td style="text-align: left">b % a 输出结果 1</td></tr>
+<tr><td style="text-align: left">**</td><td style="text-align: left">幂 - 返回x的y次幂</td><td style="text-align: left">a**b 为10的21次方</td></tr>
+<tr><td style="text-align: left">//</td><td style="text-align: left">取整除 - 向下取接近商的整数</td><td style="text-align: left"><code>&gt;&gt;&gt; 9//2 4 &gt;&gt;&gt; -9//2 -5</code></td></tr>
+</tbody></table>
+<p>以下实例演示了Python所有算术运算符的操作：</p>
+<h2 id="python比较运算符"><a class="header" href="#python比较运算符">Python比较运算符</a></h2>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">==</td><td style="text-align: left">等于 - 比较对象是否相等</td><td style="text-align: left">(a == b) 返回 False。</td></tr>
+<tr><td style="text-align: left">!=</td><td style="text-align: left">不等于 - 比较两个对象是否不相等</td><td style="text-align: left">(a != b) 返回 True。</td></tr>
+<tr><td style="text-align: left">&gt;</td><td style="text-align: left">大于 - 返回x是否大于y</td><td style="text-align: left">(a &gt; b) 返回 False。</td></tr>
+<tr><td style="text-align: left">&lt;</td><td style="text-align: left">小于 - 返回x是否小于y。所有比较运算符返回1表示真，返回0表示假。这分别与特殊的变量True和False等价。注意，这些变量名的大写。</td><td style="text-align: left">(a &lt; b) 返回 True。</td></tr>
+<tr><td style="text-align: left">&gt;=</td><td style="text-align: left">大于等于 - 返回x是否大于等于y。</td><td style="text-align: left">(a &gt;= b) 返回 False。</td></tr>
+<tr><td style="text-align: left">&lt;=</td><td style="text-align: left">小于等于 - 返回x是否小于等于y。</td><td style="text-align: left">(a &lt;= b) 返回 True。</td></tr>
+</tbody></table>
+<h2 id="python赋值运算符"><a class="header" href="#python赋值运算符">Python赋值运算符</a></h2>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">=</td><td style="text-align: left">简单的赋值运算符</td><td style="text-align: left">c = a + b 将 a + b 的运算结果赋值为 c</td></tr>
+<tr><td style="text-align: left">+=</td><td style="text-align: left">加法赋值运算符</td><td style="text-align: left">c += a 等效于 c = c + a</td></tr>
+<tr><td style="text-align: left">-=</td><td style="text-align: left">减法赋值运算符</td><td style="text-align: left">c -= a 等效于 c = c - a</td></tr>
+<tr><td style="text-align: left">*=</td><td style="text-align: left">乘法赋值运算符</td><td style="text-align: left">c *= a 等效于 c = c * a</td></tr>
+<tr><td style="text-align: left">/=</td><td style="text-align: left">除法赋值运算符</td><td style="text-align: left">c /= a 等效于 c = c / a</td></tr>
+<tr><td style="text-align: left">%=</td><td style="text-align: left">取模赋值运算符</td><td style="text-align: left">c %= a 等效于 c = c % a</td></tr>
+<tr><td style="text-align: left">**=</td><td style="text-align: left">幂赋值运算符</td><td style="text-align: left">c **= a 等效于 c = c ** a</td></tr>
+<tr><td style="text-align: left">//=</td><td style="text-align: left">取整除赋值运算符</td><td style="text-align: left">c //= a 等效于 c = c // a</td></tr>
+<tr><td style="text-align: left">:=</td><td style="text-align: left">海象运算符，可在表达式内部为变量赋值。<strong>Python3.8 版本新增运算符</strong>。</td><td style="text-align: left">在这个示例中，赋值表达式可以避免调用 len() 两次:<code>if (n := len(a)) &gt; 10:    print(f&quot;List is too long ({n} elements, expected &lt;= 10)&quot;)</code></td></tr>
+</tbody></table>
+<h2 id="python位运算符"><a class="header" href="#python位运算符">Python位运算符</a></h2>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">&amp;</td><td style="text-align: left">按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td><td style="text-align: left">(a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td></tr>
+<tr><td style="text-align: left">|</td><td style="text-align: left">按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。</td><td style="text-align: left">(a | b) 输出结果 61 ，二进制解释： 0011 1101</td></tr>
+<tr><td style="text-align: left">^</td><td style="text-align: left">按位异或运算符：当两对应的二进位相异时，结果为1</td><td style="text-align: left">(a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td></tr>
+<tr><td style="text-align: left">~</td><td style="text-align: left">按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1。<strong>~x</strong> 类似于 <strong>-x-1</strong></td><td style="text-align: left">(~a ) 输出结果 -61 ，二进制解释： 1100 0011， 在一个有符号二进制数的补码形式。</td></tr>
+<tr><td style="text-align: left">&lt;&lt;</td><td style="text-align: left">左移动运算符：运算数的各二进位全部左移若干位，由&quot;&lt;&lt;&quot;右边的数指定移动的位数，高位丢弃，低位补0。</td><td style="text-align: left">a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td></tr>
+<tr><td style="text-align: left">&gt;&gt;</td><td style="text-align: left">右移动运算符：把&quot;&gt;&gt;&quot;左边的运算数的各二进位全部右移若干位，&quot;&gt;&gt;&quot;右边的数指定移动的位数</td><td style="text-align: left">a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td></tr>
+</tbody></table>
+<h2 id="python逻辑运算符"><a class="header" href="#python逻辑运算符">Python逻辑运算符</a></h2>
+<p>Python语言支持逻辑运算符，以下假设变量 a 为 10, b为 20:</p>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">逻辑表达式</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">and</td><td style="text-align: left">x and y</td><td style="text-align: left">布尔&quot;与&quot; - 如果 x 为 False，x and y 返回 x 的值，否则返回 y 的计算值。</td><td style="text-align: left">(a and b) 返回 20。</td></tr>
+<tr><td style="text-align: left">or</td><td style="text-align: left">x or y</td><td style="text-align: left">布尔&quot;或&quot; - 如果 x 是 True，它返回 x 的值，否则它返回 y 的计算值。</td><td style="text-align: left">(a or b) 返回 10。</td></tr>
+<tr><td style="text-align: left">not</td><td style="text-align: left">not x</td><td style="text-align: left">布尔&quot;非&quot; - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td><td style="text-align: left">not(a and b) 返回 False</td></tr>
+</tbody></table>
+<h2 id="python成员运算符"><a class="header" href="#python成员运算符">Python成员运算符</a></h2>
+<p>除了以上的一些运算符之外，Python还支持成员运算符，测试实例中包含了一系列的成员，包括字符串，列表或元组。</p>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">in</td><td style="text-align: left">如果在指定的序列中找到值返回 True，否则返回 False。</td><td style="text-align: left">x 在 y 序列中 , 如果 x 在 y 序列中返回 True。</td></tr>
+<tr><td style="text-align: left">not in</td><td style="text-align: left">如果在指定的序列中没有找到值返回 True，否则返回 False。</td><td style="text-align: left">x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td></tr>
+</tbody></table>
+<h2 id="python身份运算符"><a class="header" href="#python身份运算符">Python身份运算符</a></h2>
+<p>身份运算符用于比较两个对象的存储单元</p>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th><th style="text-align: left">实例</th></tr></thead><tbody>
+<tr><td style="text-align: left">is</td><td style="text-align: left">is 是判断两个标识符是不是引用自一个对象</td><td style="text-align: left"><strong>x is y</strong>, 类似 <strong>id(x) == id(y)</strong> , 如果引用的是同一个对象则返回 True，否则返回 False</td></tr>
+<tr><td style="text-align: left">is not</td><td style="text-align: left">is not 是判断两个标识符是不是引用自不同对象</td><td style="text-align: left"><strong>x is not y</strong> ， 类似 <strong>id(x) != id(y)</strong>。如果引用的不是同一个对象则返回结果 True，否则返回 False。</td></tr>
+</tbody></table>
+<h2 id="python运算符优先级"><a class="header" href="#python运算符优先级">Python运算符优先级</a></h2>
+<p>以下表格列出了从最高到最低优先级的所有运算符：</p>
+<table><thead><tr><th style="text-align: left">运算符</th><th style="text-align: left">描述</th></tr></thead><tbody>
+<tr><td style="text-align: left">**</td><td style="text-align: left">指数 (最高优先级)</td></tr>
+<tr><td style="text-align: left">~ + -</td><td style="text-align: left">按位翻转, 一元加号和减号 (最后两个的方法名为 +@ 和 -@)</td></tr>
+<tr><td style="text-align: left">* / % //</td><td style="text-align: left">乘，除，求余数和取整除</td></tr>
+<tr><td style="text-align: left">+ -</td><td style="text-align: left">加法减法</td></tr>
+<tr><td style="text-align: left">&gt;&gt; &lt;&lt;</td><td style="text-align: left">右移，左移运算符</td></tr>
+<tr><td style="text-align: left">&amp;</td><td style="text-align: left">位 'AND'</td></tr>
+<tr><td style="text-align: left">^ |</td><td style="text-align: left">位运算符</td></tr>
+<tr><td style="text-align: left">&lt;= &lt; &gt; &gt;=</td><td style="text-align: left">比较运算符</td></tr>
+<tr><td style="text-align: left">== !=</td><td style="text-align: left">等于运算符</td></tr>
+<tr><td style="text-align: left">= %= /= //= -= += *= **=</td><td style="text-align: left">赋值运算符</td></tr>
+<tr><td style="text-align: left">is is not</td><td style="text-align: left">身份运算符</td></tr>
+<tr><td style="text-align: left">in not in</td><td style="text-align: left">成员运算符</td></tr>
+<tr><td style="text-align: left">not and or</td><td style="text-align: left">逻辑运算符</td></tr>
+</tbody></table>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../python基础_1_python基础/4.Python推导式.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../python基础_1_python基础/6.Python3字符串.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../python基础_1_python基础/4.Python推导式.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../python基础_1_python基础/6.Python3字符串.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

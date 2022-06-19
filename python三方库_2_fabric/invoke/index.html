@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>invoke</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">我的笔记库</a></li><li class="chapter-item expanded affix "><li class="part-title">python基础</li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/index.html"><strong aria-hidden="true">1.</strong> python基础</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../python基础_1_python基础/1.python3基础语法.html"><strong aria-hidden="true">1.1.</strong> python3基础语法</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/2.基本数据类型.html"><strong aria-hidden="true">1.2.</strong> 基本数据类型</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/3.Python3数据类型转换.html"><strong aria-hidden="true">1.3.</strong> Python3数据类型转换</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/4.Python推导式.html"><strong aria-hidden="true">1.4.</strong> Python推导式</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/5.Python3运算符.html"><strong aria-hidden="true">1.5.</strong> Python3运算符</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/6.Python3字符串.html"><strong aria-hidden="true">1.6.</strong> Python3字符串</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/7.python3列表.html"><strong aria-hidden="true">1.7.</strong> python3列表</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/8.元祖.html"><strong aria-hidden="true">1.8.</strong> 元祖</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/9.Python3字典.html"><strong aria-hidden="true">1.9.</strong> Python3字典</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/10.Python3集合.html"><strong aria-hidden="true">1.10.</strong> Python3集合</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/11.Number类型.html"><strong aria-hidden="true">1.11.</strong> Number类型</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/12.python3流程控制.html"><strong aria-hidden="true">1.12.</strong> python3流程控制</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/13.Python3迭代器与生成器.html"><strong aria-hidden="true">1.13.</strong> Python3迭代器与生成器</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/14.函数.html"><strong aria-hidden="true">1.14.</strong> 函数</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/15.Python3JSON数据解析.html"><strong aria-hidden="true">1.15.</strong> Python3JSON数据解析</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/16.Python3面向对象.html"><strong aria-hidden="true">1.16.</strong> Python3面向对象</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/17.模块与包.html"><strong aria-hidden="true">1.17.</strong> 模块与包</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/With关键字.html"><strong aria-hidden="true">1.18.</strong> With关键字</a></li><li class="chapter-item expanded "><a href="../../python基础_1_python基础/杂项.html"><strong aria-hidden="true">1.19.</strong> 杂项</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">python三方库</li><li class="chapter-item expanded "><div><strong aria-hidden="true">2.</strong> fabric</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/fabric/index.html"><strong aria-hidden="true">2.1.</strong> fabric</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/fabric/Configuration.html"><strong aria-hidden="true">2.1.1.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/fabric/README_1.x.html"><strong aria-hidden="true">2.1.2.</strong> README_1.x</a></li></ol></li><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/invoke/index.html" class="active"><strong aria-hidden="true">2.2.</strong> invoke</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/invoke/1.DefiningAndRunningTask.html"><strong aria-hidden="true">2.2.1.</strong> DefiningAndRunningTask</a></li><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/invoke/2.InvokeCoreUsage.html"><strong aria-hidden="true">2.2.2.</strong> InvokeCoreUsage</a></li><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/invoke/3.Configuration.html"><strong aria-hidden="true">2.2.3.</strong> Configuration</a></li><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/invoke/4.loadingCollections.html"><strong aria-hidden="true">2.2.4.</strong> loadingCollections</a></li><li class="chapter-item expanded "><a href="../../python三方库_2_fabric/invoke/5.UsingInvokeAslibrary.html"><strong aria-hidden="true">2.2.5.</strong> UsingInvokeAslibrary</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="welcome-to-invoke"><a class="header" href="#welcome-to-invoke">Welcome to Invoke!</a></h1>
+<p>该网站涵盖了Invoke的项目信息，例如变更日志，贡献指南，开发路线图，新闻/博客等。详细的用法和API文档可以在我们的代码文档网站 docs.pyinvoke.org 上找到。此外，项目维护者在他的网站上保留了路线图。
+请参阅下面的高级介绍，或左侧的导航以获取网站的其余内容。</p>
+<h2 id="what-is-invoke"><a class="header" href="#what-is-invoke">What is Invoke?</a></h2>
+<p>Invoke是一个Python (2.7和3.4) 任务执行工具和库，从各种来源汲取灵感，得出一个强大而干净的功能集。</p>
+<ul>
+<li>
+<p>像Ruby的Rake工具和Invoke自己的前身Fabric 1.x一样，它提供了一个干净的高级API，用于运行shell命令并从tasks.py文件中定义/组织任务函数:</p>
+<pre><code class="language-python">from invoke import task
+
+@task
+def clean(c, docs=False, bytecode=False, extra=''):
+    patterns = ['build']
+    if docs:
+        patterns.append('docs/_build')
+    if bytecode:
+        patterns.append('**/*.pyc')
+    if extra:
+        patterns.append(extra)
+    for pattern in patterns:
+        c.run(&quot;rm -rf {}&quot;.format(pattern))
+
+@task
+def build(c, docs=False):
+    c.run(&quot;python setup.py build&quot;)
+    if docs:
+        c.run(&quot;sphinx-build docs docs/_build&quot;)
+</code></pre>
+</li>
+<li>
+<p>从GNU Make开始，它继承了对通用模式的最小样板的强调，并能够在一次调用中运行多个任务:</p>
+<pre><code class="language-python">$ invoke clean build
+</code></pre>
+</li>
+<li>
+<p>其中Fabric 1.x认为命令行方法的默认使用模式，Invoke (和建立在它上面的工具) 同样在家里嵌入你自己的Python代码或REPL::</p>
+<pre><code class="language-python">&gt;&gt;&gt; from invoke import run
+&gt;&gt;&gt; cmd = &quot;pip install -r requirements.txt&quot;
+&gt;&gt;&gt; result = run(cmd, hide=True, warn=True)
+&gt;&gt;&gt; print(result.ok)
+True
+&gt;&gt;&gt; print(result.stdout.splitlines()[-1])
+Successfully installed invocations-0.13.0 pep8-1.5.7 spec-1.3.1
+</code></pre>
+</li>
+<li>
+<p>在大多数Unix CLI应用程序的领导下，它提供了一种传统的基于标志的命令行解析风格，从任务签名中导出标志名称和值类型 (当然是可选的!):</p>
+<pre><code>$ invoke clean --docs --bytecode build --docs --extra='**/*.pyo'
+$ invoke clean -d -b build --docs -e '**/*.pyo'
+$ invoke clean -db build -de '**/*.pyo'
+</code></pre>
+</li>
+<li>
+<p>像它的许多前辈一样，它也提供了高级功能– namespacing, task aliasing, before/after hooks, parallel execution and more.</p>
+</li>
+</ul>
+<h1 id="getting-started"><a class="header" href="#getting-started">Getting started</a></h1>
+<p>教程/入门文档中解释了许多核心思想和API调用:Getting started</p>
+<ul>
+<li>定义或运行任务：<a href="https://docs.pyinvoke.org/en/stable/getting-started.html#defining-and-running-task-functions">Defining and running task functions</a></li>
+<li>任务参数：<a href="https://docs.pyinvoke.org/en/stable/getting-started.html#task-parameters">Task parameters</a></li>
+<li>列出任务：<a href="https://docs.pyinvoke.org/en/stable/getting-started.html#listing-tasks">Listing tasks</a></li>
+<li>运行shell任务：<a href="https://docs.pyinvoke.org/en/stable/getting-started.html#running-shell-commands">Running shell commands</a></li>
+<li>申明任务：<a href="https://docs.pyinvoke.org/en/stable/getting-started.html#declaring-pre-tasks">Declaring pre-tasks</a></li>
+<li>创建名称空间：<a href="https://docs.pyinvoke.org/en/stable/getting-started.html#creating-namespaces">Creating namespaces</a></li>
+</ul>
+<h2 id="the-invoke-cli-tool"><a class="header" href="#the-invoke-cli-tool">The <code>invoke</code> CLI tool</a></h2>
+<p>有关要调用的CLI接口、可用的核心标志和TAB补全：选项的详细信息。</p>
+<ul>
+<li><code>inv[oke]</code> core usage
+<ul>
+<li>核心标志：<a href="https://docs.pyinvoke.org/en/stable/invoke.html#core-options-and-flags">Core options and flags</a></li>
+<li>Shell tab completion
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/invoke.html#generating-a-completion-script">Generating a completion script</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/invoke.html#sourcing-the-script">Sourcing the script</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/invoke.html#utilizing-tab-completion-itself">Utilizing tab completion itself</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="concepts"><a class="header" href="#concepts">Concepts</a></h2>
+<p><strong>深入挖掘</strong></p>
+<ul>
+<li>Configuration
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#introduction">Introduction</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#the-configuration-hierarchy">The configuration hierarchy</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#default-configuration-values">Default configuration values</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#configuration-files">Configuration files</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#environment-variables">Environment variables</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#collection-based-configuration"><code>Collection</code>-based configuration</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/configuration.html#example-of-real-world-config-use">Example of real-world config use</a></li>
+</ul>
+</li>
+<li>Invoking tasks
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/invoking-tasks.html#basic-command-line-layout">Basic command line layout</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/invoking-tasks.html#task-command-line-arguments">Task command-line arguments</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/invoking-tasks.html#how-tasks-run">How tasks run</a></li>
+</ul>
+</li>
+<li>Using Invoke as a library
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/library.html#reusing-invoke-s-cli-module-as-a-distinct-binary">Reusing Invoke’s CLI module as a distinct binary</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/library.html#customizing-the-configuration-system-s-defaults">Customizing the configuration system’s defaults</a></li>
+</ul>
+</li>
+<li>Loading collections
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/loading.html#task-module-discovery">Task module discovery</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/loading.html#configuring-the-loading-process">Configuring the loading process</a></li>
+</ul>
+</li>
+<li>Constructing namespaces
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#starting-out">Starting out</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#naming-your-tasks">Naming your tasks</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#nesting-collections">Nesting collections</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#importing-modules-as-collections">Importing modules as collections</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#default-tasks">Default tasks</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#mix-and-match">Mix and match</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/namespaces.html#more-shortcuts">More shortcuts</a></li>
+</ul>
+</li>
+<li>Testing Invoke-using codebases
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/testing.html#subclass-modify-invoke-internals">Subclass &amp; modify Invoke ‘internals’</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/testing.html#use-mockcontext">Use <code>MockContext</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/testing.html#expect-results">Expect <code>Results</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/testing.html#avoid-mocking-dependency-code-paths-altogether">Avoid mocking dependency code paths altogether</a></li>
+</ul>
+</li>
+<li>Automatically responding to program output
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/watchers.html#background">Background</a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/concepts/watchers.html#basic-use">Basic use</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="api"><a class="header" href="#api">API</a></h2>
+<ul>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/__init__.html"><code>__init__</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/collection.html"><code>collection</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/config.html"><code>config</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/context.html"><code>context</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/exceptions.html"><code>exceptions</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/executor.html"><code>executor</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/loader.html"><code>loader</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/parser.html"><code>parser</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/program.html"><code>program</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/runners.html"><code>runners</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/tasks.html"><code>tasks</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/terminals.html"><code>terminals</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/util.html"><code>util</code></a></li>
+<li><a href="https://docs.pyinvoke.org/en/stable/api/watchers.html"><code>watchers</code></a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../python三方库_2_fabric/fabric/README_1.x.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../python三方库_2_fabric/invoke/1.DefiningAndRunningTask.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../python三方库_2_fabric/fabric/README_1.x.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../python三方库_2_fabric/invoke/1.DefiningAndRunningTask.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
